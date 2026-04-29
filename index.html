@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jupyter Notebook</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>#1. Encryption Caesar Cipher</h1>
+    <p>text = input("Input Text:")
+shift = int(input("Shift Value:"))
+result = ""
+
+for char in text:
+    if char.isalpha():
+        if char.isupper():
+            result += chr(((ord(char)-65 + shift )%26)+65)
+        else:
+            result += chr(((ord(char)-97 + shift )%26)+97)
+    else:
+        result += char
+
+print("-"*30)
+print("Input Text:", text)
+print("Shift Value:", shift)
+print("Cipher Value:",result)</p>
+
+   <h1>#3. SHA256 object</h1>
+    <p>import hashlib
+
+password=input("Enter the password:")
+password_bytes=password.encode('utf-8')
+hashed_object= hashlib.sha256(password_bytes)
+
+output= hashed_object.hexdigest()
+
+print(output)</p>
+
+   <h1>#4. Random</h1>
+    <p>import random
+import string
+
+length = int(input("Enter the length required:"))
+characters = string.ascii_letters + string.digits + string.punctuation
+password = ""
+
+for i in range(length):
+    password += random.choice(characters)
+
+print("-"*30)
+print("Required Length:",length)
+print("Password Generated:",password)>
+  
+</body>
+</html>
