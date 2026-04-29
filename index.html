@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>#1. Encryption Caesar Cipher</h1>
-    <p>text = input("Input Text:")
+    <pre><code>text = input("Input Text:")
 shift = int(input("Shift Value:"))
 result = ""
 
@@ -25,10 +25,10 @@ for char in text:
 print("-"*30)
 print("Input Text:", text)
 print("Shift Value:", shift)
-print("Cipher Value:",result)</p>
+print("Cipher Value:",result)</code></pre>
 
    <h1>#3. SHA256 object</h1>
-    <p>import hashlib
+    <pre><code>import hashlib
 
 password=input("Enter the password:")
 password_bytes=password.encode('utf-8')
@@ -36,10 +36,10 @@ hashed_object= hashlib.sha256(password_bytes)
 
 output= hashed_object.hexdigest()
 
-print(output)</p>
+print(output)</code></pre>
 
    <h1>#4. Random</h1>
-    <p>import random
+    <pre><code>import random
 import string
 
 length = int(input("Enter the length required:"))
@@ -51,7 +51,7 @@ for i in range(length):
 
 print("-"*30)
 print("Required Length:",length)
-print("Password Generated:",password)>
+print("Password Generated:",password)</code></pre>
   
 </body>
 </html>
